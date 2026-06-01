@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Examen Bienes Raíces NY - 275 Preguntas</title>
+  <title>Examen Bienes Raíces NY - 175 Preguntas (Español)</title>
   <style>
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
     .container { max-width: 1100px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
@@ -22,9 +22,11 @@
 </head>
 <body>
   <div class="container">
-    <h1>🧠 Examen de Bienes Raíces Nueva York - 275 Preguntas</h1>
-    <p style="text-align:center; color:#555;">Todas las preguntas en español • Orden aleatorio</p>
+    <h1>🧠 Examen de Bienes Raíces Nueva York - 175 Preguntas</h1>
+    <p style="text-align:center; color:#555;">Todas las preguntas y respuestas en español • Orden aleatorio</p>
+
     <div id="quiz"></div>
+
     <button class="btn-primary" onclick="calcularResultado()">Ver Resultado Final</button>
     <button class="btn-secondary" onclick="location.reload()">↻ Nueva Mezcla de Preguntas</button>
   </div>
@@ -48,21 +50,11 @@
       136:'a',137:'b',138:'c',139:'d',140:'a',141:'c',142:'b',143:'d',144:'a',145:'b',
       146:'d',147:'d',148:'a',149:'b',150:'b',151:'d',152:'b',153:'b',154:'c',155:'d',
       156:'a',157:'c',158:'c',159:'d',160:'c',161:'d',162:'b',163:'b',164:'c',165:'d',
-      166:'a',167:'d',168:'c',169:'d',170:'c',171:'d',172:'b',173:'d',174:'c',175:'d',
-      176:'a',177:'b',178:'b',179:'b',180:'c',181:'c',182:'c',183:'a',184:'d',185:'c',
-      186:'c',187:'c',188:'a',189:'a',190:'d',191:'b',192:'a',193:'b',194:'a',195:'b',
-      196:'c',197:'c',198:'a',199:'c',200:'c',201:'c',202:'d',203:'d',204:'b',205:'d',
-      206:'b',207:'a',208:'c',209:'b',210:'c',211:'d',212:'c',213:'d',214:'d',215:'c',
-      216:'c',217:'c',218:'a',219:'a',220:'d',221:'c',222:'a',223:'b',224:'b',225:'a',
-      226:'c',227:'c',228:'d',229:'d',230:'c',231:'c',232:'b',233:'c',234:'c',235:'a',
-      236:'b',237:'d',238:'c',239:'d',240:'b',241:'a',242:'c',243:'c',244:'b',245:'b',
-      246:'c',247:'c',248:'d',249:'a',250:'d',251:'b',252:'d',253:'d',254:'c',255:'d',
-      256:'b',257:'b',258:'c',259:'d',260:'c',261:'a',262:'d',263:'b',264:'c',265:'a',
-      266:'d',267:'c',268:'c',269:'a',270:'c',271:'b',272:'d',273:'a',274:'a',275:'b'
+      166:'a',167:'d',168:'c',169:'d',170:'c',171:'d',172:'b',173:'d',174:'c',175:'d'
     };
 
     const questions = [
-      // 1-175 (de tu archivo original)
+      // 1-75: Preguntas originales traducidas
       {num:1, q:"Si un titular de licencia ha violado la ley de licencias, el DOS puede imponer una multa de:", a:"hasta $10,000", b:"no más de $100", c:"hasta $1,000", d:"prisión por hasta cinco años"},
       {num:2, q:"Si un titular de licencia se convierte en socio de una firma de bienes raíces, debe tener una:", a:"licencia de vendedor", b:"licencia de corredor", c:"licencia de corredor asociado", d:"mínimo de dos años de experiencia como corredor"},
       {num:3, q:"¿Cuál de las siguientes funciones NO requiere una licencia de bienes raíces?", a:"negociar el intercambio de propiedad inmueble para otros", b:"alquilar unidades para varios propietarios diferentes", c:"subastar propiedad inmueble", d:"venta de un negocio donde no hay propiedad inmueble"},
@@ -73,7 +65,7 @@
       {num:8, q:"Sally, una vendedora, representa a los vendedores. Sin embargo, le ha sugerido a los compradores que está tratando de obtener el precio completo de listado porque hay varias ofertas más bajas. En este escenario:", a:"Sally está actuando correctamente como agente del vendedor", b:"ha surgido una posible situación de agencia dual", c:"ha surgido una agencia por ratificación", d:"Sally ha cambiado su representación solo a los compradores"},
       {num:9, q:"Morir sin dejar testamento se dice que se muere:", a:"testado", b:"escheatado", c:"intestado", d:"alienado"},
       {num:10, q:"Otro nombre para la propiedad personal es:", a:"bienes raíces", b:"bienes muebles", c:"accesorio", d:"mercancía"},
-       {num:11, q:"Un patrimonio libre limitado por la vida del titular es un:", a:"patrimonio vitalicio", b:"patrimonio vitalicio pur autre vie", c:"patrimonio vitalicio en remanente", d:"patrimonio vitalicio en reversión"},
+      {num:11, q:"Un patrimonio libre limitado por la vida del titular es un:", a:"patrimonio vitalicio", b:"patrimonio vitalicio pur autre vie", c:"patrimonio vitalicio en remanente", d:"patrimonio vitalicio en reversión"},
       {num:12, q:"El derecho legal de entrar en la propiedad de otro es una:", a:"invasión", b:"servidumbre", c:"intrusión", d:"variación"},
       {num:13, q:"La compañía de servicios públicos local obtendría el derecho de pasar la línea eléctrica para servir su propiedad mediante:", a:"poder policial", b:"una servidumbre aparente", c:"una servidumbre prescriptiva", d:"una servidumbre en bruto"},
       {num:14, q:"Un propietario ribereño es aquel que posee tierra que limita con un:", a:"lago artificial", b:"océano o mar", c:"canal de irrigación", d:"río o arroyo de agua corriente"},
@@ -240,109 +232,6 @@
       {num:173, q:"La Regulación Z NO cubre protecciones al consumidor para:", a:"líneas de crédito de capital hipotecario", b:"préstamos hipotecarios residenciales", c:"préstamos hipotecarios comerciales", d:"publicidad de términos de crédito para préstamos hipotecarios residenciales"},
       {num:174, q:"La promulgación de legislación de zonificación por una unidad gubernamental es posible bajo su:", a:"poder de seizin", b:"poder de dominio eminente", c:"poder policial", d:"poder de expropiación"},
       {num:175, q:"¿Cuál de los siguientes NO se considera propiedad inmueble?", a:"la superficie de la tierra", b:"derechos aéreos", c:"edificios", d:"accesorios comerciales"}
-
-
-      // Preguntas 176 a 275 (completas)
-      {num:176, q:"¿Cuál de los siguientes NO está exento de los requisitos de licencia al realizar los actos de un agente inmobiliario?", a:"Una persona que lista una casa para un amigo", b:"Un oficial público realizando deberes oficiales", c:"Un propietario vendiendo su propia casa", d:"Un fiduciario en una quiebra"},
-      {num:177, q:"La mayor parte de la ley que regula la conducta de los vendedores y corredores en Nueva York está contenida en cuál de los siguientes estatutos?", a:"Artículo 6-E de la Ley Ejecutiva", b:"Artículo 12-A de la Ley de Propiedad Real", c:"Ley General de Negocios de Nueva York", d:"Ley de Práctica Civil y Reglas de Nueva York"},
-      {num:178, q:"Los anuncios hechos por corredores de bienes raíces que no indican que el anunciante es un corredor son:", a:"legales en Nueva York", b:"conocidos como anuncios ciegos", c:"aceptables siempre que aparezca el número de teléfono del corredor", d:"aceptables si el corredor opera como corredor individual bajo su propio nombre"},
-      {num:179, q:"La licencia del vendedor debe mantenerse:", a:"por el vendedor", b:"por el corredor en un lugar seguro", c:"y exhibida por el corredor", d:"por el abogado de la firma de corretaje en una caja fuerte especial"},
-      {num:180, q:"El corredor White tiene un cliente para una propiedad listada por el corredor Green. En esta situación, el corredor White:", a:"representa al comprador", b:"se representa a sí mismo", c:"representa al vendedor como subagente", d:"a nadie"},
-      {num:181, q:"Un tipo de actividad de agente inmobiliario que los expertos en seguridad recomiendan que nunca se realice solo es:", a:"cita de oficina con nuevos prospectos", b:"la presentación de listado", c:"casa abierta", d:"mostrar una propiedad en alquiler"},
-      {num:182, q:"Cuando un vendedor trabaja con un comprador, el comprador es cliente del vendedor si:", a:"está atendiendo al comprador", b:"el comprador ha compartido información financiera con el vendedor", c:"el vendedor tiene un acuerdo de agencia con el comprador", d:"el comprador paga la comisión del vendedor"},
-      {num:183, q:"El corredor de bienes raíces generalmente es contratado por un vendedor como agente a través de un documento conocido como:", a:"acuerdo de listado", b:"acuerdo de buscador", c:"binder", d:"opción de compra"},
-      {num:184, q:"Todos los diversos privilegios y obligaciones que otorga la propiedad de bienes raíces se denominan:", a:"derechos litorales", b:"derechos riparios", c:"derechos de superficie y subsuelo", d:"haz de derechos"},
-      {num:185, q:"Un patrimonio en el que el título revertirá al otorgante en caso de incumplimiento de una condición impuesta al título es un(a):", a:"patrimonio indefectible", b:"patrimonio de cuota simple", c:"patrimonio defeasible", d:"patrimonio vitalicio de reversión"},
-      {num:186, q:"Cuando artículos de propiedad personal se incorporan a la propiedad real, los artículos se convierten en:", a:"emblemas", b:"accesorios", c:"accesorios fijos", d:"estovers"},
-      {num:187, q:"La prioridad de pago de la mayoría de los gravámenes se basa en:", a:"la cantidad de dinero adeudada", b:"el tiempo que se ha adeudado el dinero", c:"la fecha y hora de registro", d:"esfuerzos agresivos de cobro"},
-      {num:188, q:"¿Cuál de los siguientes sería más probablemente un easement in gross?", a:"poste de servicio eléctrico", b:"pared medianera", c:"entrada compartida", d:"acuerdo de derecho de paso registrado"},
-      {num:189, q:"Un deed of release que no contiene garantías es un(a):", a:"quitclaim deed", b:"warranty deed con covenant de gravamen", c:"bargain and sale deed", d:"no se usa generalmente en Nueva York"},
-      {num:190, q:"De los siguientes tipos de deeds, ¿cuál proporciona al cesionario la mayor garantía de título?", a:"special warranty", b:"deed of confirmation", c:"sheriff's deed", d:"full covenant and warranty"},
-      {num:191, q:"Si un contrato establece que un comprador debe perder el depósito al vendedor si incumple el contrato, el dinero del depósito se considera:", a:"daños compensatorios", b:"daños liquidados", c:"rescisión", d:"cumplimiento específico"},
-      {num:192, q:"¿Cuál de los siguientes establece que todos los contratos que transfieren un interés en bienes raíces deben hacerse por escrito?", a:"Estatuto de Fraudes", b:"Estatuto de Limitaciones", c:"ley de divulgación", d:"Ley Ejecutiva de Nueva York"},
-      {num:193, q:"Cuando una parte compra una opción, el optionee está comprando:", a:"responsabilidad contractual", b:"tiempo", c:"terreno", d:"ejercicio"},
-      {num:194, q:"Una forma ilegal de desalojo real es:", a:"self-help", b:"desalojo constructivo", c:"reversión", d:"mitigación de daños"},
-      {num:195, q:"Un arrendamiento que prevé que el arrendatario pague todos o parte de los gastos de la propiedad además de la renta se llama:", a:"estate at sufferance", b:"net lease", c:"sale and leaseback", d:"gross lease"},
-      {num:196, q:"Cuando un arrendatario transfiere todo el interés restante de su arrendamiento a otra parte que luego debe pagar al propietario, se llama:", a:"novation", b:"sublease", c:"assignment", d:"lis pendens"},
-      {num:197, q:"Un formulario de estimación de préstamo según lo requerido por TRID contiene:", a:"información sobre riesgos del préstamo específico", b:"divulgación de una ruptura en la cadena de título", c:"específicos sobre costos de cierre", d:"divulgación de agencia dual del mortgage broker"},
-      {num:198, q:"Tras el pago total de una hipoteca, el prestatario debe recibir del acreedor hipotecario un(a):", a:"satisfacción de hipoteca", b:"certificado de liberación marginal", c:"certificado de reducción", d:"estoppel certificate"},
-      {num:199, q:"Cuanto menor sea la relación préstamo-valor (LTV), mayor será el:", a:"hipoteca", b:"costo mensual de intereses", c:"pago inicial", d:"pago mensual total"},
-      {num:200, q:"Cuando un préstamo hipotecario se liquida con pagos periódicos, se dice que está:", a:"alienado", b:"en incumplimiento", c:"amortizado", d:"ballooned"},
-      {num:201, q:"Una hipoteca blanket usualmente grava:", a:"varias hipotecas", b:"una hipoteca wraparound subyacente", c:"varias parcelas de propiedad real", d:"bienes del hogar como ropa de cama, electrodomésticos y otros bienes muebles"},
-      {num:202, q:"Cuando el uso actual de un terreno está en conflicto legal con una ordenanza de zonificación promulgada, el uso se llama:", a:"nulo", b:"una varianza", c:"zonificación puntual", d:"no conforme"},
-      {num:203, q:"Ejemplos de controles privados de uso de suelo NO incluirían:", a:"convenios restrictivos", b:"restricciones colocadas en deeds o testamentos", c:"condiciones en un deed", d:"eminent domain"},
-      {num:204, q:"Según lo establecido por la ordenanza de zonificación, la distancia mínima permitida entre el límite frontal de un lote y el borde frontal de un edificio se conoce como:", a:"frontage", b:"setback", c:"easement", d:"línea de demarcación"},
-      {num:205, q:"Un tipo de sistema de calefacción que se encuentra más comúnmente en casas muy antiguas es un(a):", a:"sistema de agua caliente", b:"sistema de aire caliente forzado", c:"sistema de zócalo eléctrico", d:"sistema de vapor"},
-      {num:206, q:"Un tipo de aislamiento que se usó ampliamente en hogares durante los años 1970-1980 y se descubrió que tenía propiedades tóxicas es:", a:"batt insulation", b:"urea formaldehyde foam insulation", c:"reflective accordion aluminum insulation", d:"loose-fill insulation"},
-      {num:207, q:"Con respecto al aislamiento en construcción residencial, el R-factor es:", a:"el grado de resistencia a la transferencia de calor a través de las paredes", b:"el grosor del aislamiento", c:"el grado de toxicidad del aislamiento", d:"el punto en el que el aislamiento se congelará dentro de las paredes"},
-      {num:208, q:"Los interruptores de circuito o fusibles se encuentran:", a:"en el service drop", b:"en el service lateral", c:"en el panel de distribución", d:"detrás del interruptor de pared"},
-      {num:209, q:"El valor al que se aplica una tasa impositiva local para calcular el impuesto a la propiedad se conoce como el valor:", a:"de costo", b:"tasado", c:"de mercado", d:"de precio"},
-      {num:210, q:"¿Qué es una tasación?", a:"la determinación del valor de mercado", b:"la determinación del multiplicador de renta bruta", c:"una estimación o opinión imparcial de valor", d:"una declaración de valor para fines de impuestos sobre la renta"},
-      {num:211, q:"Un titular de licencia debe presentar el formulario de Divulgación de Agencia al vendedor o comprador prospectivo en el primer contacto sustantivo, que se define como el momento en que:", a:"se firma el acuerdo de agencia", b:"se hace o recibe una oferta por la propiedad", c:"el comprador prospectivo visita la propiedad", d:"se comparte información sobre la propiedad con partes interesadas"},
-      {num:212, q:"Si una persona con discapacidad desea hacer modificaciones razonables a un apartamento de alquiler, ¿cuál de las siguientes aplica? El propietario:", a:"puede denegarlas", b:"debe pagar por instalar estas modificaciones", c:"puede permitir que el inquilino instale y pague las modificaciones", d:"solo puede permitir las modificaciones si está cubierto por la Ley de Estadounidenses con Discapacidades"},
-      {num:213, q:"En Nueva York, ¿cuál de los siguientes NO es una exención en la venta o alquiler de vivienda bajo la Ley de Derechos Humanos?", a:"venta de una casa unifamiliar", b:"alquiler de todas las habitaciones en una vivienda a miembros del mismo sexo", c:"alquiler de una habitación en una casa unifamiliar si el inquilino vive allí", d:"vivienda pública que atiende las necesidades de un grupo de edad específico"},
-      {num:214, q:"Bajo las Leyes Federales de Vivienda Justa, un prestamista NO puede:", a:"negar un préstamo a un solicitante de cierta raza que no cumpla con los estándares de crédito del prestamista", b:"exigir un informe de crédito a cada solicitante de préstamo", c:"negar un préstamo porque la propiedad está en otro estado", d:"ofrecer una tasa de interés diferente basada en el estatus de minoría"},
-      {num:215, q:"El término \"proceso de filtrado descendente\" significa más aproximadamente:", a:"proceso de transferencia de una nota promisoria asociada con un trust deed o hipoteca de un inversionista a otro", b:"proceso que mide la capacidad del agua para pasar a través del suelo", c:"disminución en el valor de unidades de vivienda originalmente propiedad de dueños de ingresos altos y medios, haciéndolas disponibles para posibles dueños de menores ingresos", d:"la profundidad a la que las reservas de agua dulce no se ven afectadas por la infiltración de aguas subterráneas"},
-      {num:216, q:"Los tanques de almacenamiento subterráneos son utilizados por empresas e industria por todas las siguientes razones EXCEPTO que están:", a:"fuera de la vista", b:"protegidos contra vandalismo", c:"protegidos contra fugas", d:"protegidos contra incendios"},
-      {num:217, q:"La Ley de Reducción de Peligros de Pintura con Plomo en Viviendas Residenciales estableció procedimientos para divulgar la presencia de plomo en:", a:"todas las propiedades residenciales ofrecidas en venta", b:"solo construcción residencial nueva", c:"propiedades residenciales construidas antes de 1978", d:"propiedades residenciales construidas antes de 1960"},
-      {num:218, q:"La agencia reguladora de Nueva York que aprueba planes para instalaciones públicas de tratamiento de aguas residuales es el Departamento de:", a:"Conservación Ambiental", b:"Utilización de Tierras", c:"Estado", d:"Interior"},
-      {num:219, q:"Aunque el corredor asociado o vendedor con licencia es un contratista independiente, el corredor empleador es:", a:"requerido supervisar al titular de licencia en la prestación de servicios inmobiliarios según la ley de Nueva York", b:"responsable de preparar declaraciones trimestrales del IRS sobre los ingresos del titular de licencia", c:"responsable del pago de los gastos comerciales del titular de licencia", d:"requerido retener la mitad de los impuestos de seguridad social del titular de licencia"},
-      {num:220, q:"Un vendedor con licencia o corredor asociado actuando como contratista independiente debe:", a:"ser pagado en base a ventas y producción", b:"ejecutar un acuerdo de contratista independiente por escrito anualmente con el corredor", c:"recibir la mitad de su prima de salud pagada por el corredor", d:"tanto a como b"},
-      {num:221, q:"Si un corredor de bienes raíces ganó una comisión de $5,600 a una tasa de comisión del 7%, ¿a qué precio se vendió la propiedad?", a:"$39,200", b:"$68,000", c:"$80,000", d:"$125,000"},
-      {num:222, q:"Un acre rectangular de tierra tiene un ancho de 165 pies. ¿Cuál es la longitud de la propiedad?", a:"264 pies", b:"275 pies", c:"379 pies", d:"718 pies"},
-      {num:223, q:"Si el valor tasado de una propiedad es $136,000 y el impuesto anual pagado es $1,700, ¿cuál es la tasa impositiva por cada $100 de valor tasado?", a:"$0.80", b:"$1.25", c:"$2.31", d:"$125.00"},
-      {num:224, q:"¿Cuál es una función del ingeniero municipal?", a:"mantiene los mapas de impuestos", b:"supervisa calles y otras actividades de obras públicas", c:"emite certificados de ocupación", d:"dirige el departamento local de construcción"},
-      {num:225, q:"Una de las principales características económicas que diferencia la propiedad real de la propiedad personal es:", a:"inmovilidad", b:"valor", c:"tangibilidad", d:"oferta y demanda"},
-      {num:226, q:"La agencia que tiene el rol de proteger el patrimonio cultural de un municipio es la:", a:"junta de apelaciones de zonificación", b:"consejo asesor de conservación", c:"junta de revisión arquitectónica", d:"departamento de construcción"},
-      {num:227, q:"En términos de seguros, un peril es:", a:"la cantidad que el asegurado debe pagar hacia un reclamo antes de recibir beneficios", b:"una cláusula que modifica o cambia una póliza de seguro", c:"un evento que causa daño", d:"un solicitante de alto riesgo"},
-      {num:228, q:"La ley de Nueva York establece que una compañía de seguros no puede cancelar una póliza de seguro, excepto por razones específicas, después de cuántos días de entrar en vigor?", a:"90", b:"15", c:"45", d:"60"},
-      {num:229, q:"Una póliza que proporciona cobertura de responsabilidad en exceso de los límites ofrecidos por pólizas primarias se llama:", a:"póliza de responsabilidad general comercial", b:"paquete de póliza de propietario de negocio", c:"póliza de responsabilidad premium", d:"póliza umbrella"},
-      {num:230, q:"La exención alternativa para veteranos está disponible para:", a:"todos los veteranos", b:"propiedad comercial de veteranos que sirvieron en tiempo de guerra", c:"propiedad residencial de veteranos que sirvieron en tiempo de guerra", d:"solo veteranos que sirvieron durante la Guerra de Vietnam"},
-      {num:231, q:"Una queja de un contribuyente respecto a una tasación de propiedad debe presentarse ante cuál organismo rector?", a:"Corte Suprema", b:"Oficina de Servicios de Impuestos sobre Propiedad Real", c:"junta de revisión de tasaciones", d:"junta de planificación local"},
-      {num:232, q:"Para calificar para una exención parcial de impuestos a la propiedad, los adultos mayores deben tener al menos:", a:"55", b:"65", c:"70", d:"75"},
-      {num:233, q:"Las tasaciones son determinadas por el:", a:"junta de planificación", b:"Oficina de Servicios de Impuestos sobre Propiedad Real", c:"tasador", d:"gobierno local"},
-      {num:234, q:"Un patrocinador de condominio es:", a:"el propietario de la unidad individual", b:"nombrado por la junta de directores", c:"responsable de nombrar al agente administrador", d:"no responsable de colocar un límite en el control del patrocinador de la junta"},
-      {num:235, q:"Una relación de agencia entre un vendedor y un corredor suele ser un tipo de:", a:"agencia especial", b:"agencia general", c:"agencia dual", d:"agencia designada"},
-      {num:236, q:"¿Cuál de los siguientes incluye una declaración y declaración de divulgación y se presenta ante la oficina del Fiscal General de Nueva York?", a:"certificado de acciones", b:"plan de oferta", c:"arrendamiento propietario", d:"acuerdo de alteración"},
-      {num:237, q:"¿Cuál de los siguientes NO es un ejemplo de ítems de gastos contenidos en un estado operativo de propiedad de inversión?", a:"honorarios contables y legales", b:"seguro de propiedad", c:"honorarios de administración de propiedad", d:"devolución de depósitos de seguridad"},
-      {num:238, q:"Con propiedad de inversión, las pérdidas por vacantes y pérdidas de cobro se deducen de la renta bruta programada para llegar a:", a:"ingreso operativo neto", b:"servicio de deuda", c:"ingreso bruto efectivo", d:"gastos deducibles"},
-      {num:239, q:"Un estado operativo ajustado para reflejar un cambio potencial en ingresos y gastos basado en el conocimiento del inversionista del mercado inmobiliario se conoce como:", a:"lista de renta potencial", b:"ingreso operativo neto", c:"programa C del IRS", d:"programa pro forma"},
-      {num:240, q:"Un programa pro forma analiza:", a:"ingreso actual", b:"potencial o falta de potencial para ganar más ganancia", c:"contribuciones al IRS", d:"valor de la propiedad si existe"},
-      {num:241, q:"Para fines fiscales, el precio pagado por una propiedad, más gastos incurridos en adquirirla junto con cualquier mejora de capital, se conoce como:", a:"base ajustada", b:"refugio fiscal", c:"ganancia de capital", d:"portafolio de precios"},
-      {num:242, q:"Edward y Bella se casan y compran una casa juntos. Como cada uno tiene hijos de un matrimonio anterior, quieren que sus respectivos intereses pasen a sus hijos cuando mueran. La mejor forma de propiedad para ellos es:", a:"tenancy by the entirety", b:"joint tenancy", c:"tenancy in common", d:"cualquiera de estas formas de propiedad"},
-      {num:243, q:"Para que los bienes raíces califiquen para un intercambio con diferimiento de impuestos, ambos deben ser:", a:"sin gravámenes", b:"propiedad mejorada", c:"mantenidos con fines de inversión o negocio", d:"de tamaño, valor y propósito específico aproximados"},
-      {num:244, q:"Los mortgage brokers están licenciados a través del:", a:"Departamento de Estado, División de Servicios de Licencias", b:"Departamento de Servicios Financieros de NYS", c:"Departamento de Estado, División de Corporaciones", d:"Oficina de Servicios de Impuestos sobre Propiedad Real"},
-      {num:245, q:"La agencia dual NO es legal:", a:"si el mortgage broker también es agente inmobiliario", b:"si permanece sin divulgar al prestatario/comprador", c:"si se presenta un affidavit de agencia dual al Departamento de Servicios Financieros de NYS", d:"bajo ninguna circunstancia"},
-      {num:246, q:"¿Cuál de los siguientes es un requisito de los mortgage brokers?", a:"un bono por $10,000 que se presenta cuando se aprueba la solicitud", b:"patrimonio neto de al menos $250,000", c:"una tarifa de huellas dactilares de $102.25 y una tarifa de investigación de $5,000", d:"crédito existente de al menos $1 millón proporcionado por una institución bancaria"},
-      {num:247, q:"La tarifa del administrador de propiedad suele ser una combinación de una tarifa base y un porcentaje de qué tipo de ingreso?", a:"bruto potencial", b:"bruto operativo", c:"bruto efectivo", d:"neto operativo"},
-      {num:248, q:"Los informes financieros periódicos proporcionados al propietario se llaman:", a:"presupuestos estabilizados", b:"informes operativos", c:"declaraciones de administración", d:"informes de administración de propiedad"},
-      {num:249, q:"Cuando un propietario de propiedad y un administrador firman un acuerdo de administración:", a:"se crea una relación de agencia", b:"no se crea una relación de agencia", c:"solo se crea una relación de agencia si la tarifa de administración es un porcentaje del ingreso de alquiler", d:"solo se crea una relación contractual"},
-      {num:250, q:"¿Cuál de los siguientes NO es una categoría de mantenimiento?", a:"correctivo", b:"preventivo", c:"renovación", d:"seguros"},
-      {num:251, q:"Un deficiency judgment lien puede adjuntarse a una propiedad cuando:", a:"hay impuestos a la propiedad impagos en la propiedad", b:"los ingresos de una venta de ejecución hipotecaria son menores que la deuda pendiente", c:"no hay orden judicial", d:"la propiedad es condenada bajo eminent domain"},
-      {num:252, q:"Bethany es una asistente sin licencia que trabaja para la vendedora Joan. Bethany puede:", a:"mostrar propiedad", b:"completar un acuerdo de listado", c:"depositar cheques de earnest money", d:"recopilar información para un análisis de mercado comparativo"},
-      {num:253, q:"El letrero comercial de un corredor de bienes raíces debe incluir todo lo siguiente EXCEPTO:", a:"el número de teléfono del corredor", b:"el nombre del corredor", c:"la dirección comercial del corredor", d:"las palabras \"corredor de bienes raíces con licencia\""},
-      {num:254, q:"¿Por qué es importante un formulario de identificación de prospectos o similar para el agente inmobiliario?", a:"se usa para calificar al comprador para fines hipotecarios", b:"es parte del proceso de divulgación de agencia", c:"ayuda al agente a confirmar la identidad de clientes y clientes para fines de seguridad", d:"elimina a aquellas personas que no están comprometidas a comprar una propiedad"},
-      {num:255, q:"En la transferencia de título de propiedad real, el deed es un instrumento de:", a:"fraude", b:"condena", c:"eminent domain", d:"transmisión"},
-      {num:256, q:"Cuando se firma un acuerdo de listado exclusivo, un titular de licencia que es miembro de un MLS debe proporcionar al vendedor una lista de:", a:"los otros miembros del MLS", b:"los otros listados activos del titular de licencia", c:"casas vendidas por el titular de licencia en el año pasado", d:"otros titulares de licencia empleados por su corredor"},
-      {num:257, q:"En términos de inversión, un bajo riesgo de pérdida generalmente se traduce en:", a:"menor liquidez", b:"una tasa de retorno más baja", c:"una tasa de retorno más alta", d:"mayor apalancamiento"},
-      {num:258, q:"Otro término para el principal en una relación de agencia es:", a:"agente", b:"corredor", c:"cliente", d:"fiduciario"},
-      {num:259, q:"En el estado de cuenta de cierre, el Impuesto de Transferencia de Bienes Raíces de Nueva York suele listarse como:", a:"crédito al comprador", b:"débito al comprador", c:"crédito al vendedor", d:"débito al vendedor"},
-      {num:260, q:"El escheat de la propiedad de un difunto ocurre cuando:", a:"no hay testamento", b:"no hay herederos", c:"no hay herederos y no hay testamento", d:"un testamento es anulado"},
-      {num:261, q:"Penny tiene un life estate en la granja familiar. Tras su muerte, la propiedad pasará a su hijo Jared. El deed que da título a Jared se conoce como:", a:"transmisión en remainder", b:"patrimonio de remainderman", c:"life estate en reversión", d:"estate pur autre vie"},
-      {num:262, q:"El título es evidencia de:", a:"oferta y aceptación de un acuerdo de compra", b:"la existencia de una hipoteca sobre la propiedad", c:"pago total de impuestos a la propiedad", d:"el derecho a poseer propiedad"},
-      {num:263, q:"Un tipo de organización corporativa que funciona como una corporación pero se grava como una sociedad se llama:", a:"sociedad corporativa", b:"corporación Subchapter S", c:"corporación C", d:"corporación de doble tributación"},
-      {num:264, q:"¿Cuál de los siguientes ítems suele prorratearse en el cierre?", a:"honorarios de tasación", b:"comisión del corredor", c:"impuestos a la propiedad inmobiliaria", d:"impuestos de transferencia de bienes raíces"},
-      {num:265, q:"El contrato de seguro de título firmado en el cierre es un acuerdo entre:", a:"el comprador y la aseguradora de título", b:"la aseguradora de título y el prestamista", c:"el prestamista y el vendedor", d:"el vendedor y la aseguradora de título"},
-      {num:266, q:"En un arreglo de listado con compensación de tarifa fija, la tarifa es:", a:"más alta que una comisión porcentual", b:"basada en el precio de la casa", c:"pagada solo si la propiedad se vende", d:"pagada por adelantado"},
-      {num:267, q:"Cuando un préstamo convencional se vende a una agencia gubernamental en el mercado hipotecario secundario, se considera un:", a:"préstamo respaldado por el gobierno", b:"préstamo convencional", c:"préstamo conforme", d:"préstamo graduado"},
-      {num:268, q:"Un corredor puede pagar compensación a todos los siguientes EXCEPTO:", a:"un abogado", b:"otro corredor", c:"un vendedor patrocinado por otro corredor", d:"un vendedor patrocinado por él mismo"},
-      {num:269, q:"Un devise es un regalo de:", a:"propiedad real por testamento", b:"propiedad real por deed", c:"propiedad personal por testamento", d:"propiedad personal por deed"},
-      {num:270, q:"¿Cuál de los siguientes se consideraría una propiedad de propósito especial?", a:"una casa de 100 años", b:"un parque de oficinas", c:"un campus universitario", d:"una tienda departamental"},
-      {num:271, q:"Cuando un vendedor obtiene un acuerdo de listado con un vendedor, el listado pertenece a:", a:"la organización de franquicia", b:"la firma de corretaje", c:"el vendedor", d:"el vendedor"},
-      {num:272, q:"La posesión adversa es el proceso de obtener título de propiedad mediante:", a:"ejecución hipotecaria", b:"herencia", c:"transferencia de título", d:"ocupar la propiedad contra la voluntad del propietario"},
-      {num:273, q:"La duración de tiempo por la que se mantiene un freehold estate es:", a:"indeterminada", b:"fijada por autoridades de zonificación locales", c:"establecida por los términos del acuerdo de compra", d:"basada en la duración de la vida del titular del patrimonio"},
-      {num:274, q:"La agencia por ratificación ocurre cuando las partes:", a:"actúan de manera que implica un acuerdo de agencia", b:"crean un acuerdo expreso oral", c:"confirman por escrito un acuerdo de agencia implícito anterior", d:"no impiden una acción que implica un acuerdo de agencia"},
-      {num:275, q:"Los derechos que afirman que los propietarios de bienes raíces tienen derechos de propiedad sobre productos obtenidos de su tierra, como cultivos, se conocen como:", a:"derechos civiles", b:"derechos de accesión", c:"derechos fructus naturales", d:"derechos appurtenant"}
     ];
 
     function shuffle(array) {
@@ -400,12 +289,12 @@
         if (correctOpt && !correctOpt.classList.contains('wrong')) correctCount++;
       });
 
-      const percentage = Math.round((correctCount / questions.length) * 100);
+      const percentage = Math.round((correctCount / 175) * 100);
       let mensaje = percentage >= 80 ? "¡Excelente! Estás muy bien preparado." :
                     percentage >= 70 ? "¡Buen resultado! Repasa las áreas débiles." : 
                     "Sigue estudiando. ¡Tú puedes!";
 
-      alert(`🎯 RESULTADO FINAL\n\nCorrectas: ${correctCount} de ${questions.length}\nPorcentaje: ${percentage}%\n\n${mensaje}`);
+      alert(`🎯 RESULTADO FINAL\n\nCorrectas: ${correctCount} de 175\nPorcentaje: ${percentage}%\n\n${mensaje}`);
     }
 
     window.onload = renderQuiz;
